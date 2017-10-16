@@ -7,7 +7,7 @@ numFilas = fst . snd . bounds
 numColumnas:: Matriz -> Int
 numColumnas = snd . snd . bounds
 
-diagonalSec :: Matriz -> Vector
+diagonalSec :: Matriz -> Vetor
 diagonalSec p = array (1,n) [(i,p!(i,n+1-i)) | i <- [1..n]]
     where n = min (numFilas p) (numColumnas p)
 
